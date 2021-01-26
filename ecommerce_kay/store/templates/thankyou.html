@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Educación Virtual-Store
+{% endblock %}
+
+{% block content %}
+  <div class="text-center">
+    <br>
+    <br>
+    <h1 class="text-center product_title">
+      Gracias por realizar su pedido
+    </h1>
+    <br>
+    <br>
+    <p>Su numero de orden es: <b>{{ customer_order.id }}</b></p>
+    <br>
+    <p>
+      Hemos recibido su pedido y comenzaremos a procesarlo de inmediato..
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+Crear Nueva cuenta
+{% endblock %}
+
+{% block content %}
+
+  <div>
+    {% if not form.is_valid %}
+      <div class="mx-auto">
+        <br>
+        <h1 class="product_title text-center">
+          Crear Nueva cuenta
+        </h1>
+        <br>
+        <div class="col-9 col-sm-9 col-md-6 col-lg-5 mx-auto bg-light">
+          <br>
+          <p>Intregrese la siguiente información para crear una nueva cuenta</p>
+          <form method="post">
+            {% csrf_token %}
+            <p>{{ form | crispy  }}</p>
+            <button type="submit" name="button" class="btn btn-secondary">Regístrate</button>
+          </form>
+          <br>
+        </div>
+      </div>
+    {% else %}
+      <div class="mx-auto">
+        <br>
+        <h1 class="product_title text-center">
+          Su cuenta se ha creado satisfactoriamente
+        </h1>
+        <br>
+        <div class="container">
+            <p>
+              Querido cliente,
+              <br>
+              <br>
+              Su cuenta ha sido creada y está lista para usar..
+              <br>
+              <a href="{% url 'home' %}">Seguir comprando</a> y disfruta de la variedad de productos que tenemos en la Educación Virtual-Store.
+            </p>
+        </div>
+      </div>
+
+    {% endif %}
+  </div>
+{% endblock %}

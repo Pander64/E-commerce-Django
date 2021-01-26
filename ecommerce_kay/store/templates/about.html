@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Sobre Nosotros
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+    <div class="row mt-5">
+        <div class="col-10 mx-auto col-md-6 my-3">
+            <img style="width: 100%" src="{% static 'img/image.jpg' %}" alt="">
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-3">
+            <div>
+                <h1 class="product_title">Educación Virtual-Store</h1>
+                <p class="product_description">Sobre Nosotros</p>
+                <p class="text-justify product_text">Somoos una empresa de educación que nos dedicamos a ofrecer servicios a muchas escuelas y universidades ...</p>
+                
+                <a href="{% url 'contact' %}">
+                    <button type="button" name="button" class="btn btn-secondary">
+                     Contactenos
+                    </button>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
