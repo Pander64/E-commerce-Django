@@ -1,0 +1,40 @@
+Abrir CMD 
+ Pegar 
+1. cd Documents\Kay\tienda-final
+
+2. pipenv shell
+3. cd ecommerce_kay
+4. code .
+5. python manage.py runserver
+
+Abrir navegador pegar 
+http://localhost:8000/
+
+
+
+Sign in
+user:kayprincess
+pass:Facil.1234
+
+Entrar admin 
+http://localhost:8000/admin
+
+user: pander
+pass: pander
+
+Para salir:
+ctrl+z
+exit
+
+
+Tarjeta
+kay@hotmail.com
+Kay princess 
+1587 Broadway 
+New York 
+10036
+USA
+
+4242424242424242
+11/22
+999
